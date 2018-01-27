@@ -1,0 +1,32 @@
+.wrapper {
+	@include center-block(80%);
+	background: $color-bg;
+	padding: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.centered {
+	@include center-block(50%);
+	text-align: center;
+	line-height: 0.75rem;
+	h2 {
+		text-align: center;
+	}
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	.flex-block {
+		flex: 1 50%;
+		margin: 1rem;
+		align-self: center;
+	}
+}
+
+.inline-list li {
+	display: inline-block;
+}

@@ -1,0 +1,19 @@
+@mixin font-props($font, $fontsize, $color, $weight: normal, $just: left) {
+	font-family: $font;
+	font-size: $fontsize;
+	color: $color;
+	font-weight: $weight;
+	text-align: $just
+}
+
+@mixin center-block($w) {
+	display: block;
+	margin: 0 auto;
+	width: $w;
+}
+
+@mixin images($w) {
+	width: $w;
+	max-width: $w;
+	border: 4px solid $color-txt;
+}

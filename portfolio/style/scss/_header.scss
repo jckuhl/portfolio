@@ -1,0 +1,35 @@
+.flex-head {
+	@extend .flex-container;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background: $color-head;
+	align-items: center;
+}
+
+h1.name {
+	@include font-props($font, 3rem, $color-head-txt, bold);
+	flex: 3 66%;
+	justify-self: left;
+	margin: 1rem;
+}
+
+.nav-list {
+	display: flex;
+	flex: 1;
+	justify-self: right;
+	list-style: none;
+	justify-content: space-between;
+	flex: 1 33%;
+	margin: 2rem;
+	li a:link {
+		color: $color-head-txt;
+	}
+	li a:active, li a:hover {
+		color: darken($color-head-txt, 10%);
+		text-shadow: 1px 1px darken($color-head-txt, 20%);
+	}
+	li a:visited {
+		color: darken($color-head-txt, 30%);
+	}
+}

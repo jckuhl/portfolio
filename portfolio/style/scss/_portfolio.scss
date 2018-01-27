@@ -1,0 +1,24 @@
+
+.tech-picker {
+	@extend .inline-list;
+	text-align: center;
+}
+
+.flex-gallery-img {
+	@extend .flex-block;
+	max-width: 40%;
+	img {
+		@include images(100%);
+	}
+}
+
+.flex-list {
+	display: flex;
+	justify-content: left;
+	padding-left: 0;
+	margin-top: 0;
+	li {
+		list-style: none;
+		max-width: 15%;
+	}
+}

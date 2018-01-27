@@ -1,0 +1,16 @@
+.wrapper section:first-child {
+	background: $color-about;
+	margin-top: 0;
+	padding: 1rem;
+}
+
+.flex-image {
+	@extend .flex-block;
+	img {
+		@include images(50%);
+		display: block;
+		margin: 0 auto;
+		margin-top: 2rem;
+		border-radius: 50%;
+	}
+}

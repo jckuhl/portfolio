@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: url("../../imgs/universe.jpg");
+	@include font-props($font, 1rem, $color-txt);
+}
+
+h2 {
+	@include font-props($font, 2rem, $color-txt, bold);
+	margin-top: 0;
+}

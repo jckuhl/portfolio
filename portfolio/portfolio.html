@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style/css/portfoliostyle.css">
+</head>
+<body>
+	<header class="flex-head">
+		<h1 class="name">Jonathan C Kuhl</h1>
+		<ul class="nav-list">
+			<li><a href="https://projectbreakpoint.wordpress.com/">Blog</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<div class="wrapper">
+		<section>
+			<div class="centered">
+				<h2>Web Developer</h2>
+				<p>Rumford Maine</p>
+				<p>Willing to work remote or relocate</p>
+				<p><a href="mailto:jckuhl87@gmail.com">jckuhl87@gmail.com</a></p>
+				<ul class="inline-list">
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">LinkedIn</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="flex-container">
+			<div class="flex-block">
+				<h2 id="about">Welcome</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="flex-image">
+				<img src="imgs/profile-pic.jpg" alt="Profile Picture">
+			</div>
+		</section>
+		<h2 id="portfolio">Portfolio</h2>
+		<section>
+			<h3 class="center">Select A Technology:</h3>
+			<ul class="tech-picker">
+				<li><img data-tech="html5" src="imgs/logos/html5-logo-sm.png" alt="HTML 5 Logo"></li>
+				<li><img data-tech="css3" src="imgs/logos/css3-logo-sm.png" alt=""></li>
+				<li><img data-tech="javascript" src="imgs/logos/js-logo-sm.png" alt=""></li>
+				<li><img data-tech="sass" src="imgs/logos/html5-logo-sm.png" alt=""></li>
+				<li><img data-tech="jquery" src="imgs/logos/css3-logo-sm.png" alt=""></li>
+				<li><img data-tech="react" src="imgs/logos/js-logo-sm.png" alt=""></li>
+				<li><img data-tech="angular" src="imgs/logos/html5-logo-sm.png" alt=""></li>
+			</ul>
+			<div class="flex-container">
+				<div class="flex-gallery-img" data-tech="html5 css3 javascript">
+					<h3>Pixel Paint</h3>
+					<p><a href="https://github.com/jckuhl/pixel-paint">View on GitHub!</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+					<a href="../pixelpaint/index.html"><img src="imgs/screenshots/pixelpaint.png" alt="Portfolio Screenshot"></a>
+					<ul class="flex-list">
+						<li><img src="imgs/logos/html5-logo-sm.png" alt=""></li>
+						<li><img src="imgs/logos/css3-logo-sm.png" alt=""></li>
+						<li><img src="imgs/logos/js-logo-sm.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="flex-gallery-img" data-tech="html5 css3 javascript react">
+					<h3>Pixel Paint</h3>
+					<p>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+					<img src="imgs/screenshots/pixelpaint.png" alt="Portfolio Screenshot">
+					<ul class="inline-list">
+						<li><img src="#" alt=""></li>
+						<li><img src="#" alt=""></li>
+						<li><img src="#" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<h2 id="experience">Experience and Education</h2>
+		<section class="flex-container">
+			<div class="flex-block">
+				<h3>Experience</h3>
+				<div>
+					<p><span>BarclayCard US</span> July 2017 - Present</p>
+					<ol>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ol>
+				</div>
+				<div>
+					<p><span>58th Aerial Port Squadron, USAFR</span> May 2009 - Present</p>
+					<ol>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ol>
+				</div>
+			</div>
+			<div class="flex-block">
+				<h3>Education</h3>
+				<ol>
+					<li>
+						<h3>Kaplan University</h3>
+						<h4>Expected Graduation: April 2019</h4>
+						<p>Associates Degree in Computer Science</p>
+					</li>
+					<li>
+						<h3>Daniel Webster College</h3>
+						<h4>Graduated May 2012</h4>
+						<p>Air Traffic Management</p>
+					</li>
+				</ol>
+			</div>
+		</section>
+		<section>
+			<h2 id="contact">Contact Me</h2>
+			<form action="#" method="POST">
+				<p><label for="name">Name</label><input type="text" name="name" id="name" required></p>
+				<p><label for="company">Company</label><input type="text" name="company" id="company" required></p>
+				<p><label for="email">E-Mail</label><input type="email" name="email" id="email" required></ins></p>
+				<p><label for="message">Message:</label></p>
+				<p><textarea id="message" required></textarea></p>
+				<input type="submit">
+			</form>
+			<p>Or just email me at <a href="mailto:jckuhl87@gmail.com">jckuhl87@gmail.com</a></p>
+		</section>
+	</div>
+
+	<footer>
+		<p>&copy; 2018, Jonathan Kuhl </p>
+	</footer>
+	<script type="text/javascript" src="scripts/techpicker.js"></script>
+</body>
+</html>
