@@ -15,10 +15,10 @@
 			const technologies = gallery.dataset.tech.split(" ");
 			if(technologies.indexOf(tech) !== -1) {
 				gallery.style.backgroundColor = "#ccc";
-                		this.style.border = "4px solid #990000";
-                		techPickerBtns.forEach( (btn)=> {
-                   			if(btn.dataset.tech !== tech) btn.style.border = "4px solid black" 
-               			 });
+                this.style.border = "4px solid #990000";
+                techPickerBtns.forEach( (btn)=> {
+                   if(btn.dataset.tech !== tech) btn.style.border = "4px solid black" 
+                });
 			} else {
 				gallery.style.backgroundColor = "#eee";
 			}

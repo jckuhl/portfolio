@@ -1,0 +1,34 @@
+.awesome {
+    font-size: 4em;
+    color: lime;
+}
+
+.not-awesome {
+    font-size: 0.5em;
+    color: rebeccapurple;
+}
+
+.lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+	cursor: pointer;
+    div {
+        text-align: center;
+        max-width: 75%;
+        max-height: 75%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+}
+
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
