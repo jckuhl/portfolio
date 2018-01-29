@@ -22,6 +22,10 @@ h1.name {
 	justify-content: space-between;
 	flex: 1 33%;
 	margin: 2rem;
+    padding-left: 0;
+    li {
+        padding-left: 0;
+    }
 	li a:link {
 		color: $color-head-txt;
 	}

@@ -17,3 +17,9 @@
 	max-width: $w;
 	border: 4px solid $color-txt;
 }
+
+@mixin flexy($w, $j) {
+	display: flex;
+	justify-content: $j;
+	flex-wrap: $w;
+}

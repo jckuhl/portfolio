@@ -1,17 +1,24 @@
-(function() {
+(function () {
+    
 
-	const techPickerBtns = Array.from(document.querySelectorAll(".tech-picker li"));
+	const techPickerBtns = Array.from(document.querySelectorAll("img[data-tech]"));
 	const galleryDivs = Array.from(document.querySelectorAll("div[data-tech]"));
 
 	//checks if the div's dataset has the technology that was clicked on
 	//if so, highlights it
 	//if not, returns background to normal
 	const selectDiv = function() {
-		let tech = (this.firstElementChild.dataset.tech);
+		const tech = this.dataset.tech;
 		galleryDivs.forEach( (gallery)=> {
-			let techs = gallery.dataset.tech.split(" ");
-			if(techs.indexOf(tech) !== -1) {
+			const technologies = gallery.dataset.tech.split(" ");
+			if(technologies.indexOf(tech) !== -1) {
 				gallery.style.backgroundColor = "#ccc";
+                this.style.border = "4px solid #880000";
+                techPickerBtns.forEach( (btn)=> {
+                   if(btn.dataset.tech !== tech) {
+                       btn.style.border = "4px solid black";
+                   } 
+                });
 			} else {
 				gallery.style.backgroundColor = "#eee"
 			}
@@ -21,5 +28,5 @@
 	techPickerBtns.forEach( (btn)=> {
 		btn.addEventListener("click", selectDiv);
 	});
-
+	
 })();

@@ -12,14 +12,30 @@
 	@include center-block(50%);
 	text-align: center;
 	line-height: 0.75rem;
+    padding-bottom: 1rem;
 	h2 {
 		text-align: center;
 	}
+    .contact form, .contact form p {
+        text-align: left;
+        line-height: 1rem;
+    }
+    
+    form label {
+        margin-right: 0.5rem;
+    }
+    
+    form textarea {
+        width: 75%;
+        height: 200px;
+    }
+    p:last-child {
+        padding-bottom: 0.5rem;
+    }
 }
 
 .flex-container {
-	display: flex;
-	justify-content: center;
+	@include flexy(nowrap, space-around);
 	.flex-block {
 		flex: 1 50%;
 		margin: 1rem;
@@ -27,6 +43,9 @@
 	}
 }
 
-.inline-list li {
+.inline-list {
+    padding-left: 0;
+    li {
 	display: inline-block;
+    }
 }

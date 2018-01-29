@@ -11,5 +11,12 @@ body {
 
 h2 {
 	@include font-props($font, 2rem, $color-txt, bold);
-	margin-top: 0;
+	margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.border-grad {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to left, #eee, black 50%, #eee);
 }

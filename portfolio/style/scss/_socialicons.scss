@@ -1,0 +1,31 @@
+ul.social-list li::before {
+    display: inline-block;
+	content: "";
+	height: 20px;
+	width: 20px;
+	margin-left: 0px;
+	margin-right: 5px;
+    margin-bottom: -5px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#facebook::before {
+	background-image: url(../../imgs/icons/facebook-icon.png);
+}
+
+#linkedin::before {
+	background-image: url(../../imgs/icons/link-icon.png);
+}
+
+#twitter::before {
+	background-image: url(../../imgs/icons/twitter-icon.png);
+}
+
+#github::before {
+	background-image: url(../../imgs/icons/github-icon.png);
+}
+
+#codepen::before {
+	background-image: url(../../imgs/icons/codepen-icon.png);
+}
