@@ -41,6 +41,15 @@
 		margin: 1rem;
 		align-self: center;
 	}
+	.flex-block-top {
+		flex: 1 50%;
+		margin: 1rem;
+		align-self: flex-start;
+	}
+}
+
+.biography {
+    margin: 1rem;
 }
 
 .inline-list {

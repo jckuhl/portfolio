@@ -90,6 +90,13 @@ h2 {
     flex: 1 50%;
     margin: 1rem;
     align-self: center; }
+  .flex-container .flex-block-top, .flex-head .flex-block-top {
+    flex: 1 50%;
+    margin: 1rem;
+    align-self: flex-start; }
+
+.biography {
+  margin: 1rem; }
 
 .inline-list, .tech-picker {
   padding-left: 0; }
@@ -218,10 +225,12 @@ footer {
     line-height: 1.25rem; }
 
   .flex-container, .flex-head {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    flex-direction: column; }
 
   .flex-gallery {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    flex-direction: column; }
 
   .flex-gallery-img {
     min-width: 100%; }
@@ -240,7 +249,16 @@ footer {
     width: 90%; }
 
   ul.social-list li::before {
-    display: none; } }
+    display: none; }
+
+  .flex-container ol, .flex-head ol,
+  .flex-container ul,
+  .flex-head ul {
+    padding-left: 1em; }
+    .flex-container ol li, .flex-head ol li,
+    .flex-container ul li,
+    .flex-head ul li {
+      font-size: 0.8rem; } }
 .awesome {
   font-size: 4em;
   color: lime; }

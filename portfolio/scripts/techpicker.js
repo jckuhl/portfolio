@@ -1,7 +1,6 @@
-"use strict";
+!function () {
 
-(function () {
-    
+    "use strict";
 
 	const techPickerBtns = Array.from(document.querySelectorAll("img[data-tech]"));
 	const galleryDivs = Array.from(document.querySelectorAll("div[data-tech]"));
@@ -29,4 +28,4 @@
 		btn.addEventListener("click", selectDiv);
 	});
 	
-})();
+}();

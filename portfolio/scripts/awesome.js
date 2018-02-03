@@ -30,11 +30,14 @@
     }
     
     
-    window.addEventListener("keydown", (e)=> {
-        jDown = (e.keyCode === 74);
-        if((e.keyCode === 75) && (jDown)) {
+    window.addEventListener("keyup", (e)=> {
+        if(e.keyCode === 74) {
+            jDown = true;
+        } else if((e.keyCode === 75) && (jDown)) {
             jDown = false;
             pointer = iAmAwesome();
+        } else {
+            jDown = false;
         }
         if(e.keyCode === 27) {
             if(pointer) {

@@ -21,10 +21,12 @@
     
     .flex-container, {
         flex-wrap: wrap;
+        flex-direction: column;
     }
     
     .flex-gallery {
         flex-wrap: wrap;
+        flex-direction: column;
     }
     
     .flex-gallery-img {
@@ -52,5 +54,13 @@
     
     ul.social-list li::before {
         display: none;
+    }
+    
+    .flex-container ol,
+    .flex-container ul {
+        padding-left: 1em;
+        li {
+            font-size: 0.8rem;
+        }
     }
 }
